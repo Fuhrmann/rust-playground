@@ -22,7 +22,7 @@ pub fn decrement(thread: &str, count: u32) -> ChannelMsg {
     ChannelMsg::Decrement { thread, count }
 }
 
-pub fn std_bounded_channel(buffer_size: usize) {
+pub fn run(buffer_size: usize) {
     // Create a channel with a buffer size of buffer_size
     // This means that the channel can hold at most 1 message at a time
     // If the channel is full, the sender will block until the receiver consumes a message

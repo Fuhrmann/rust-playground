@@ -1,0 +1,16 @@
+[package]
+name = "playground"
+version = "0.1.0"
+edition = "2021"
+authors = ["Ricardo Fuhrmann <fuhrmanns@gmail.com>"]
+
+[[bin]]
+name = "playground"
+path = "src/main.rs"
+
+[dependencies]
+atomic_counter.workspace = true
+bounded_channel.workspace = true
+box_dyn_traits.workspace = true
+trait_bounds.workspace = true
+trait_enums.workspace = true

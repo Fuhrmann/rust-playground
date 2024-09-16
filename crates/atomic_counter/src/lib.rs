@@ -1,4 +1,4 @@
-pub fn atomic_counter() {
+pub fn run() {
     // Creates a new atomic counter with an initial value of 0
     // The counter is a thread-safe integer that can be shared between threads
     // The counter can be incremented, decremented, and read atomically

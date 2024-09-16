@@ -2,7 +2,7 @@
 // Lets say we have two weather services: OpenWeather and WttrIn
 // And the user can configure which one to use in a configuration file (e.g. config.toml)
 pub struct Config {
-    pub(crate) weather_service: String,
+    pub weather_service: String,
 }
 
 // Then we define a trait that will have a method to get the weather
@@ -32,7 +32,7 @@ impl WeatherService for WttrIn {
     }
 }
 
-pub fn init(config: Config) {
+pub fn run(config: Config) {
     // This match statement will create a new instance of the weather service
     // We can only make this match work if we use Box<dyn WeatherService>
     // Since trait types are unsized, we need to use a pointer to the trait object
