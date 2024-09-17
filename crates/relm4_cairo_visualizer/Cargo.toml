@@ -1,0 +1,11 @@
+[package]
+name = "relm4_cairo_visualizer"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "relm4_cairo_visualizer"
+path = "src/main.rs"
+
+[dependencies]
+relm4 = "0.9.0"

@@ -1,10 +1,28 @@
-fn main() {
-    // bounded_channel::run(2);
-    // atomic_counter::run();
-    // box_dyn_traits::run(box_dyn_traits::Config {
-    //     weather_service: "openweather".to_string(),
-    // });
+use std::env;
+use std::process::Command;
 
-    // trait_bounds::run();
-    // trait_enums::run();
+fn main() {
+    let args: Vec<String> = env::args().collect();
+    if args.len() < 2 {
+        println!("Usage: cargo playground <playground-name>");
+        return;
+    }
+
+    let playground = &args[1];
+    match playground.as_str() {
+        "relm4_cairo_visualizer" => run_playground("relm4_cairo_visualizer"),
+        // Add other playgrounds here
+        _ => println!("Unknown playground: {}", playground),
+    }
+}
+
+fn run_playground(crate_name: &str) {
+    let status = Command::new("cargo")
+        .args(&["run", "-p", crate_name])
+        .status()
+        .expect("Failed to execute playground");
+
+    if !status.success() {
+        eprintln!("Playground execution failed");
+    }
 }

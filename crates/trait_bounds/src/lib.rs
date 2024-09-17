@@ -22,6 +22,8 @@ where
 // Here we define our network status widget
 // that can be draw on the screen
 struct NetworkStatusWidget {}
+
+#[allow(dead_code)]
 struct NetworkStatusConfig {
     ssid: String,
     password: String,
@@ -49,6 +51,7 @@ impl ConfigurableWidget for NetworkStatusWidget {
 
 // We also have a battery widget
 struct BatteryStatusWidget {}
+#[allow(dead_code)]
 struct BatteryStatusConfig {
     level: u8,
 }

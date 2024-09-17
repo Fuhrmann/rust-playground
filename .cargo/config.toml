@@ -1,0 +1,2 @@
+[alias]
+playground = "run --bin playground --"

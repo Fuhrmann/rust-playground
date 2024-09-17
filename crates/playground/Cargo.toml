@@ -9,8 +9,9 @@ name = "playground"
 path = "src/main.rs"
 
 [dependencies]
-atomic_counter.workspace = true
-bounded_channel.workspace = true
-box_dyn_traits.workspace = true
-trait_bounds.workspace = true
-trait_enums.workspace = true
+atomic_counter = { path = "../atomic_counter" }
+bounded_channel = { path = "../bounded_channel" }
+box_dyn_traits = { path = "../box_dyn_traits" }
+trait_bounds = { path = "../trait_bounds" }
+trait_enums = { path = "../trait_enums" }
+relm4_cairo_visualizer = { path = "../relm4_cairo_visualizer" }

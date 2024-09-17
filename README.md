@@ -29,6 +29,15 @@ This playground includes the following features:
 - **Tutorials**: Step-by-step tutorials to guide you through different Rust concepts and techniques.
 - **Documentation**: Find detailed documentation and explanations for different Rust features and libraries.
 
+# Playgrounds
+
+### relm4_cairo_visualizer
+A simple audio visualizer built with Relm4 and Cairo. This project demonstrates how to create a basic audio visualizer using the Relm4 framework and Cairo graphics library.
+
+```bash
+cargo playground relm4_cairo_visualizer
+```
+
 ## Contributing
 Contributions are welcome! If you have any ideas, improvements, or bug fixes, feel free to open an issue or submit a pull request. Please make sure to follow the [contribution guidelines](CONTRIBUTING.md).
 

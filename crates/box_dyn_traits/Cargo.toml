@@ -2,5 +2,3 @@
 name = "box_dyn_traits"
 version = "0.1.0"
 edition = "2021"
-
-[dependencies]

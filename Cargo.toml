@@ -1,9 +1,3 @@
 [workspace]
+resolver = "2"
 members = ["crates/*"]
-
-[workspace.dependencies]
-atomic_counter = { path = "crates/atomic_counter" }
-bounded_channel = { path = "crates/bounded_channel" }
-box_dyn_traits = { path = "crates/box_dyn_traits" }
-trait_bounds = { path = "crates/trait_bounds" }
-trait_enums = { path = "crates/trait_enums" }
