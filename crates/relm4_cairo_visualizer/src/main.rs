@@ -56,7 +56,8 @@ impl Component for AppModel {
                         }
 
                         // Paint the background to dark
-                        ctx.set_source_rgb(0.1, 0.1, 0.1);
+                        ctx.set_source_rgb(0.0, 0.0, 0.0);
+                        ctx.paint().unwrap();
 
                         // Calculate the width of each bar
                         // Formula: bar_width = DrawingArea_width / number_of_bars
