@@ -10,7 +10,6 @@ fn main() {
 
     let playground = &args[1];
     match playground.as_str() {
-        "relm4_cairo_visualizer" => run_playground("relm4_cairo_visualizer"),
         // Add other playgrounds here
         _ => println!("Unknown playground: {}", playground),
     }

@@ -14,4 +14,3 @@ bounded_channel = { path = "../bounded_channel" }
 box_dyn_traits = { path = "../box_dyn_traits" }
 trait_bounds = { path = "../trait_bounds" }
 trait_enums = { path = "../trait_enums" }
-relm4_cairo_visualizer = { path = "../relm4_cairo_visualizer" }
